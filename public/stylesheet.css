@@ -3,13 +3,18 @@ body {
 	background-color: pink;
 }
 
-h1 {
+h1, p, form {
 	font-family: 'Cantata One', serif;
-	margin: 2% 20%;
+	text-align: center;
 }
 
 li {
 	float: left;
 	list-style-type: none;
 	margin-left: 40px;
+	margin-top: 8%;
 }
+
+
+
+
