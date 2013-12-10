@@ -1,3 +1,3 @@
-require './app'
+require './game'
 
-run Game::App.new
+run Game::RPS_App.new
