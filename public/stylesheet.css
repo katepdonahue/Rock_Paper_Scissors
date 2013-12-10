@@ -3,9 +3,13 @@ body {
 	background-color: pink;
 }
 
+h1 {
+	font-family: 'Cantata One', serif;
+	margin: 2% 20%;
+}
+
 li {
 	float: left;
 	list-style-type: none;
 	margin-left: 40px;
 }
-
