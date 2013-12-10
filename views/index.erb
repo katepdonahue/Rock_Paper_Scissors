@@ -1,2 +1,11 @@
-<h1><%= @outcome %></h1>
-<p>The computer's move was <%= @computer_move %></p>
+<h2>Do you want to play rock paper scissors?</h2>
+<p>Pick your move:</p>
+<form action="/throw/rock">
+	<input type="submit" value="Rock">
+</form>
+<form action="/throw/paper">
+	<input type="submit" value="Paper">
+</form>
+<form action="/throw/scissors">
+	<input type="submit" value="Scissors">
+</form>
