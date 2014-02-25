@@ -1,5 +1,12 @@
 <h1><%= @outcome %></h1>
-<p>The troll's move was <%= @computer_move %></p>
-<h2>RUN!</h2>
-<p>or</p>
-<p><a href="/">Convince the troll to give you another chance.</a></p>
+<p>My move was <%= @computer_move %></p>
+<% if @outcome == "You lost..." %>
+  <h2>RUN!</h2>
+  <p>or</p>
+  <p><a href="/">Convince the troll to give you another chance.</a></p>
+<% elsif @outcome == "You won!" %>
+  <p>I'm so lonely. Are you sure you won't play again?</p>
+  <p><a href="/">Ok, play again.</a></p>
+<% else %>
+  <p>I guess you get another chance. <a href="/">Play again.</a></p>
+<% end %>

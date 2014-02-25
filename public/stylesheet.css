@@ -17,9 +17,9 @@ html, body {
 
 #wrapper {
   position: relative;
-  width: 800px;
+  width: 70%;
   min-height: 400px;
-  margin: 100px auto;
+  margin: 15% auto;
 }
 
 h1, h2, p, a {
@@ -29,13 +29,17 @@ h1, h2, p, a {
   opacity: 0.5;
 }
 
+p {
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
 }
 
 .moves {
-  width: 80%;
-	margin: 0 auto;
+  width: 70%;
+	margin: 10% auto;
 }
 
 .hand-wrapper {
@@ -44,7 +48,7 @@ a {
 
 .hand {
   max-height: 250px;
-  padding: 30px;
+  margin: 30px;
 }
 
 
