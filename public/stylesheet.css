@@ -1,19 +1,52 @@
-
-body {
-	background-color: pink;
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-h1, p, form {
+#background {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#wrapper {
+  position: relative;
+  width: 800px;
+  min-height: 400px;
+  margin: 100px auto;
+}
+
+h1, h2, p, a {
 	font-family: 'Cantata One', serif;
 	text-align: center;
+  color: white;
+  opacity: 0.5;
 }
 
-li {
-	float: left;
-	list-style-type: none;
-	margin-left: 40px;
-	margin-top: 8%;
+a {
+  text-decoration: none;
 }
+
+.moves {
+  width: 80%;
+	margin: 0 auto;
+}
+
+.hand-wrapper {
+  display: inline-block;
+}
+
+.hand {
+  max-height: 250px;
+  padding: 30px;
+}
+
 
 
 
