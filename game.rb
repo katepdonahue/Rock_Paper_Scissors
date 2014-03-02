@@ -18,6 +18,24 @@ module Game
       erb :outcome
     end
 
+    get '/story/:type' do
+      @winning_move = params["type"]
+      if @winning_move == "rock"
+        @rock = "story"
+        @paper = "hidden"
+        @scissors = "hidden"
+      elsif @winning_move == "paper"
+        @rock = "hidden"
+        @paper = "story"
+        @scissors = "hidden"
+      else
+        @rock = "hidden"
+        @paper = "hidden"
+        @scissors = "story"
+      end
+      erb :story
+    end
+
   end
 end
 
